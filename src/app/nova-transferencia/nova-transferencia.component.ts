@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./nova-transferencia.component.scss'],
 })
 export class NovaTransferenciaComponent {
-  // tslint:disable-next-line:typedef
-  transferir() {
-    console.log('Solicitação realizada com sucesso');
+  valor!: number;
+  destino!: number;
+
+  transferir(): void {
+    console.log('Solicitada nova transferência');
+    console.log('Valor: ', this.valor);
+    console.log('Destino: ', this.destino);
   }
 }
