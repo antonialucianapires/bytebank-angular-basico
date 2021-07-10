@@ -5,5 +5,7 @@ Trata-se de uma aplicação em Angular que implementa duas funcionalidades dentr
 
 ## Execução
 
-Execute `npm install` para garantir a instalação dos pacotes necessários.
-Em seguida, execute `ng serve` para executar a aplicação e acesse em `http://localhost:4200/`. 
+- Execute `npm install` para garantir a instalação dos pacotes necessários.
+- Antes de executar a aplicação angular, execute o servidor da api mock no diretório /dados com o comando `npx json-server --watch db.json`.
+- Em seguida, no diretório principal do projeto, execute `ng serve` para executar a aplicação e acesse em `http://localhost:4200/`. 
+
