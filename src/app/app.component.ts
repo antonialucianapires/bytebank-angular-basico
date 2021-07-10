@@ -1,18 +1,17 @@
+import { TransferenciaService } from './services/transferencia.service';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'bytebank';
-  transferencias: any[] = [];
 
-  transferir($event: any): void{
-    console.log($event);
-    const transferencia = {...$event, data: new Date()};
-    this.transferencias.push(transferencia);
+  constructor(private service: TransferenciaService) {}
+
+  transferir($event: any): void {
+    this.service.adicionar($event);
   }
-
 }
