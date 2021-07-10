@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(private service: TransferenciaService) {}
 
-  transferir($event: any): any{
+  transferir($event: any): any {
     this.service.adicionar($event).subscribe((x: any) => console.log(x));
   }
 }
