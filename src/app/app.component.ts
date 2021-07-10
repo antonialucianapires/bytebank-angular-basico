@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-//Component é um Decorator que funciona como um metadata para adicionar propriedades às classes
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
